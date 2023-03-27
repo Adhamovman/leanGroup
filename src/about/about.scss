@@ -1,0 +1,23 @@
+#about {
+  padding: 40px 0 60px 0;
+}
+.about-img {
+  position: relative;
+}
+.play-btn {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.about {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}

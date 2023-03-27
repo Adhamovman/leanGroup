@@ -1,0 +1,18 @@
+.colleagueRow {
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  @media screen and (max-width: 556px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+.card {
+  border: none;
+  &-body {
+    padding: 0;
+  }
+}
